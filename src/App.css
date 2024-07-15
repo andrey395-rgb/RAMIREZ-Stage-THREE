@@ -1,0 +1,41 @@
+#root {
+  /* width: 1070px; */
+  /* margin: 0 auto; */
+  padding: 3rem;
+  text-align: center;
+  /* max-height: auto; */
+  /* height: 0vh; */
+  justify-content: center;
+  align-items: center;
+}
+button{
+  background:#fffac2;
+	color: rgb(0, 0, 0);
+	border: none;
+	padding: 9px;
+	cursor: pointer;
+	outline: inherit;
+  border-radius: 10px;
+  margin-top: 10px;
+  transition: 200ms ease-in-out;
+}
+
+button:hover{
+  transform: scale(1.2);
+}
+.No{
+  opacity: 0.6;
+}
+.App{
+  justify-content: center;
+  align-items: center;
+  
+}
+@media (width <= 600px){    
+#root{
+  padding: 1rem;
+
+}
+}
+
+
