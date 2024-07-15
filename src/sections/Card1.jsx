@@ -11,7 +11,6 @@ function Card1() {
     setIsToggled(!isToggled);
   };
   return (
-    
     <section id="Card" className={styles.container}>
       <div className={styles.cardscontainer}>
         <ProjectCard
@@ -43,14 +42,15 @@ function Card1() {
           p={"emma.wong@reqres.in"}
         />
       </div>
-
-      {isToggled && <Card2 />}
+      <div className={styles.extra}>{isToggled && <Card2 />}
       <button
         className={isToggled ? styles.No1 : styles.Yes1}
         onClick={() => setIsToggled(!isToggled)}
       >
         {isToggled ? "CLOSE" : "LOAD MORE"}
-      </button>
+      </button></div>
+      
+
     </section>
   );
 }

@@ -41,6 +41,7 @@ function Card2() {
           p={"tracey.ramos@reqres.in"}
         />
       </div>
+      <div className={styles.extra}>
       {isToggled && <Card />}
       <button
         className={isToggled ? styles.No2 : styles.Yes2}
@@ -48,6 +49,7 @@ function Card2() {
       >
         {isToggled ? "NO DATA" : "LOAD MORE"}
       </button>
+      </div>
     </section>
   );
 }
