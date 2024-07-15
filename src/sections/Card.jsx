@@ -5,8 +5,11 @@ import {useState} from 'react';
 import Card4 from "./Card4";
 
 function Card() {
-  const [show, setShow] = useState(true)
-  return (
+  const [isToggled, setIsToggled] = useState(false);
+  const handleClick = () => {
+    setIsToggled(!isToggled);
+  };
+    return (
     <section id="Card" className={styles.container}>
       <div className={styles.cardscontainer}>
         <ProjectCard
@@ -38,7 +41,16 @@ function Card() {
           p={"tobias.funke@reqres.in"}
         />
       </div>
-      <Card4/>
+      <div className={styles.extra}>
+      {isToggled && <Card4 />}
+      <button
+        className={isToggled ? styles.No2 : styles.Yes2}
+        onClick={() => setIsToggled(!isToggled)}
+      >
+        {isToggled ? "NO DATA" : "LOAD MORE"}
+      </button>
+      </div>
+      
     </section>
   );
 }
