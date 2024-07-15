@@ -1,11 +1,5 @@
 import React, { useEffect } from "react";
 import styles from "../sections/card.module.css";
-import avatar from "../assets/Pokes/charmeleon.png";
-import avatar1 from "../assets/Pokes/ivysaur.png";
-import avatar2 from "../assets/Pokes/wartortle.png";
-import avatar3 from "../assets/Pokes/charizard.png";
-import avatar4 from "../assets/Pokes/venusaur-f.png";
-import avatar5 from "../assets/Pokes/blastoise.png";
 import ProjectCard from "../common/ProjectCard";
 import {useState} from 'react';
 
@@ -13,36 +7,6 @@ function Card() {
   const [show, setShow] = useState(true)
   return (
     <section id="Card" className={styles.container}>
-      <div className={styles.cardscontainer}>
-        <ProjectCard
-          idlabel={"#4"}
-          src={"https://reqres.in/img/faces/4-image.jpg"}
-          link={"https://mail.google.com/"}
-          alt={"Holt"}
-          alt2={"Eve"}
-          p={"eve.holt@reqres.in"}
-        />
-      </div>
-      <div className={styles.cardscontainer}>
-        <ProjectCard
-          idlabel={"#5"}
-          src={"https://reqres.in/img/faces/5-image.jpg"}
-          link={"https://mail.google.com/"}
-          alt={"Morris"}
-          alt2={"Charles"}
-          p={"charles.morris@reqres.in"}
-        />
-      </div>
-      <div className={styles.cardscontainer}>
-        <ProjectCard
-          idlabel={"#6"}
-          src={"https://reqres.in/img/faces/6-image.jpg"}
-          link={"https://mail.google.com/"}
-          alt={"Ramos"}
-          alt2={"Tracey"}
-          p={"tracey.ramos@reqres.in"}
-        />
-      </div>
       <div className={styles.cardscontainer}>
         <ProjectCard
           idlabel={"#7"}

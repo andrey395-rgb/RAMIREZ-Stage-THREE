@@ -27,6 +27,7 @@ button:hover{
 }
 .No{
   opacity: 0.6;
+  display: none !important;
 }
 .App{
   justify-content: center;
