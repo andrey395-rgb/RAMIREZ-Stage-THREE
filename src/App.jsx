@@ -12,7 +12,6 @@ function App() {
 
   return (
     <div className="App">
-      <Pokemon/>
       <Card1 />
       {isToggled && <Card />}
       <button className={isToggled? 'No' : 'Yes'} onClick={() => setIsToggled(!isToggled)}>{

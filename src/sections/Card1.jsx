@@ -13,30 +13,34 @@ function Card1() {
       <div className={styles.cardscontainer}>
         <ProjectCard
           idlabel={"#1"}
-          src={avatar}
+          src={"https://reqres.in/img/faces/1-image.jpg"}
           link={"https://mail.google.com/"}
-          alt={"CHARMANDER"}
-          p={"charmander1@gmail.com"}
+          alt={"Bluth"}
+          alt2={"George"}
+          p={"george.bluth@reqres.in"}
         />
       </div>
       <div className={styles.cardscontainer}>
         <ProjectCard
           idlabel={"#2"}
-          src={avatar1}
+          src={"https://reqres.in/img/faces/2-image.jpg"}
           link={"https://mail.google.com/"}
-          alt={"BULBASAUR"}
-          p={"bulbasaur2@gmail.com"}
+          alt={"Weaver"}
+          alt2={"Janet"}
+          p={"janet.weaver@reqres.in"}
         />
       </div>
       <div className={styles.cardscontainer}>
         <ProjectCard
           idlabel={"#3"}
-          src={avatar2}
+          src={"https://reqres.in/img/faces/3-image.jpg"}
           link={"https://mail.google.com/"}
-          alt={"SQUIRTLE"}
-          p={"squirtle3@gmail.com"}
+          alt={"Wong"}
+          alt2={"Emma"}
+          p={"emma.wong@reqres.in"}
         />
       </div>
+      
     </section>
   );
 }

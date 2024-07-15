@@ -7,6 +7,8 @@
   /* height: 0vh; */
   justify-content: center;
   align-items: center;
+  cursor: url('../assets/pngwing.png');
+
 }
 button{
   background:#fffac2;

@@ -16,57 +16,94 @@ function Card() {
       <div className={styles.cardscontainer}>
         <ProjectCard
           idlabel={"#4"}
-          src={avatar}
+          src={"https://reqres.in/img/faces/4-image.jpg"}
           link={"https://mail.google.com/"}
-          alt={"CHARMELEON"}
-          p={"charmeleon4@gmail.com"}
+          alt={"Holt"}
+          alt2={"Eve"}
+          p={"eve.holt@reqres.in"}
         />
       </div>
       <div className={styles.cardscontainer}>
         <ProjectCard
           idlabel={"#5"}
-          src={avatar1}
+          src={"https://reqres.in/img/faces/5-image.jpg"}
           link={"https://mail.google.com/"}
-          alt={"IVYSAUR"}
-          p={"ivysaur5@gmail.com"}
+          alt={"Morris"}
+          alt2={"Charles"}
+          p={"charles.morris@reqres.in"}
         />
       </div>
       <div className={styles.cardscontainer}>
         <ProjectCard
           idlabel={"#6"}
-          src={avatar2}
+          src={"https://reqres.in/img/faces/6-image.jpg"}
           link={"https://mail.google.com/"}
-          alt={"WARTORTLE"}
-          p={"wartortle6@gmail.com"}
+          alt={"Ramos"}
+          alt2={"Tracey"}
+          p={"tracey.ramos@reqres.in"}
         />
       </div>
       <div className={styles.cardscontainer}>
         <ProjectCard
           idlabel={"#7"}
-          src={avatar3}
+          src={"https://reqres.in/img/faces/7-image.jpg"}
           link={"https://mail.google.com/"}
-          alt={"CHARIZARD"}
-          p={"charizard7@gmail.com"}
+          alt={"Lawson"}
+          alt2={"Michael"}
+          p={"michael.lawson@reqres.in"}
         />
       </div>
       <div className={styles.cardscontainer}>
         <ProjectCard
           idlabel={"#8"}
-          src={avatar4}
+          src={"https://reqres.in/img/faces/8-image.jpg"}
           link={"https://mail.google.com/"}
-          alt={"VENUSAUR"}
-          p={"venusaur8@gmail.com"}
+          alt={"Ferguson"}
+          alt2={"Lindsay"}
+          p={"lindsay.ferguson@reqres.in"}
         />
       </div>
       <div className={styles.cardscontainer}>
         <ProjectCard
           idlabel={"#9"}
-          src={avatar5}
+          src={"https://reqres.in/img/faces/9-image.jpg"}
           link={"https://mail.google.com/"}
-          alt={"BLASTOISE"}
-          p={"blastoise9@gmail.com"}
+          alt={"Funke"}
+          alt2={"Tobias"}
+          p={"tobias.funke@reqres.in"}
         />
       </div>
+      <div className={styles.cardscontainer}>
+        <ProjectCard
+          idlabel={"#10"}
+          src={"https://reqres.in/img/faces/10-image.jpg"}
+          link={"https://mail.google.com/"}
+          alt={"Fields"}
+          alt2={"Byron"}
+          p={"byron.fields@reqres.in"}
+        />
+      </div>
+      <div className={styles.cardscontainer}>
+        <ProjectCard
+          idlabel={"#11"}
+          src={"https://reqres.in/img/faces/11-image.jpg"}
+          link={"https://mail.google.com/"}
+          alt={"Edwards"}
+          alt2={"George"}
+          p={"george.edwards@reqres.in"}
+        />
+      </div>
+      <div className={styles.cardscontainer}>
+        <ProjectCard
+          idlabel={"#12"}
+          src={"https://reqres.in/img/faces/12-image.jpg"}
+          link={"https://mail.google.com/"}
+          alt={"Howell"}
+          alt2={"Rachel"}
+          p={"rachel.howell@reqres.in"}
+        />
+      </div>
+     
     </section>
   );
 }
