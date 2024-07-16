@@ -1,16 +1,17 @@
-import React from 'react';
+import React from "react";
 
-function ProjectCard({idlabel, src, link,alt, alt2,p}) {
+function ProjectCard({ id, avatar, first_name, last_name , email}) {
   return (
-    <a href={link} target="_blank">
-          <img id= 'imageholder' className="hover" idlabel = {idlabel} src={src} alt={`${alt} logo`} />
-          <h3 className='idlabel'>{idlabel}</h3>
-          <h4 className='labeltext'>{alt}, {alt2}</h4>
-          <p>{p}</p>
-        </a>
+    <a href={""} target="_blank">
+      <img id="imageholder" className="hover" src={avatar} />
+      <h3 className="idlabel">#{id}</h3>
+      <h4 className="labeltext">
+      {first_name},{last_name}
+      </h4>
+      <h3 className="emailadd">{email}</h3>
 
-      
-  )
+    </a>
+  );
 }
-
+// alt={`${alt} logo`
 export default ProjectCard;

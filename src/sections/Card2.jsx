@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import styles from "../sections/card.module.css";
-import ProjectCard from "../common/ProjectCard";
+import Employees from "../common/ProjectCard";
 import { useState } from "react";
 import Card from "../sections/Card.jsx";
 
@@ -9,38 +9,44 @@ function Card2() {
   const handleClick = () => {
     setIsToggled(!isToggled);
   };
+  const [employees, setEmployees] = useState([
+    {
+      id: 4,
+      email: "eve.holt@reqres.in",
+      first_name: "Eve",
+      last_name: "Holt",
+      avatar: "https://reqres.in/img/faces/4-image.jpg",
+    },
+    {
+      id: 5,
+      email: "charles.morris@reqres.in",
+      first_name: "Charles",
+      last_name: "Morris",
+      avatar: "https://reqres.in/img/faces/5-image.jpg",
+    },
+    {
+      id: 6,
+      email: "tracey.ramos@reqres.in",
+      first_name: "Tracey",
+      last_name: "Ramos",
+      avatar: "https://reqres.in/img/faces/6-image.jpg",
+    },
+  ]);
   return (
     <section id="Card" className={styles.container}>
-      <div className={styles.cardscontainer}>
-        <ProjectCard
-          idlabel={"#4"}
-          src={"https://reqres.in/img/faces/4-image.jpg"}
-          link={"https://mail.google.com/"}
-          alt={"Holt"}
-          alt2={"Eve"}
-          p={"eve.holt@reqres.in"}
-        />
-      </div>
-      <div className={styles.cardscontainer}>
-        <ProjectCard
-          idlabel={"#5"}
-          src={"https://reqres.in/img/faces/5-image.jpg"}
-          link={"https://mail.google.com/"}
-          alt={"Morris"}
-          alt2={"Charles"}
-          p={"charles.morris@reqres.in"}
-        />
-      </div>
-      <div className={styles.cardscontainer}>
-        <ProjectCard
-          idlabel={"#6"}
-          src={"https://reqres.in/img/faces/6-image.jpg"}
-          link={"https://mail.google.com/"}
-          alt={"Ramos"}
-          alt2={"Tracey"}
-          p={"tracey.ramos@reqres.in"}
-        />
-      </div>
+      {employees.map((employees) => {
+        return (
+        <div className={styles.cardscontainer}> 
+          <Employees
+            id={employees.id}
+            email={employees.email}
+            first_name={employees.first_name}
+            last_name={employees.last_name}
+            avatar={employees.avatar}
+          />
+        </div>
+        );
+      })}
       <div className={styles.extra}>
       {isToggled && <Card />}
       <button
